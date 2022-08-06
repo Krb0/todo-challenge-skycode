@@ -1,0 +1,33 @@
+{
+  "name": "todo-challenge-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_TELEMETRY_DISABLED=1 next dev",
+    "build": "NEXT_TELEMETRY_DISABLED=1 next build",
+    "start": "NEXT_TELEMETRY_DISABLED=1 next start",
+    "lint": "next lint",
+    "sky:setup": "yarn && prisma generate && yarn sky:chakra",
+    "sky:chakra": "chakra-cli tokens src/style/theme.ts"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@prisma/client": "4.1.1",
+    "framer-motion": "^6",
+    "fuse.js": "^6.6.2",
+    "next": "12.2.3",
+    "prisma": "^4.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^2.1.2",
+    "@types/node": "^18.6.3",
+    "@types/react": "^18.0.15",
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.3",
+    "typescript": "^4.7.4"
+  }
+}
