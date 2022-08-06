@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NEXT_TELEMETRY_DISABLED=1 next dev",
-    "build": "NEXT_TELEMETRY_DISABLED=1 next build",
-    "start": "NEXT_TELEMETRY_DISABLED=1 next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
-    "sky:setup": "yarn && prisma generate && yarn sky:chakra",
+    "sky:setup": "yarn && prisma generate && yarn sky:chakra && yarn next telemetry disable",
     "sky:chakra": "chakra-cli tokens src/style/theme.ts"
   },
   "dependencies": {
